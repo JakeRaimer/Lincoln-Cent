@@ -1,0 +1,131 @@
+/* ------------------------------------------------------------ */
+/* imports and utilities */
+
+/* 3rd-party CSS files */
+@import 'vendor/h5bp-head.css';
+@import 'vendor/normalize.css';
+@import 'vendor/h5bp-tail.css';
+
+/* use a more intuitive box sizing model (http://is.gd/wNVjAo) */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* Scale down images and embedded videos so they don't overflow their parents */
+img, object { max-width: 100%; }
+
+/*	Development/layout aid. Remove the comments
+	on this rule in order to draw boxes around DIVs
+	and other elements used for layout. */
+/*
+div, main, article, section, aside, hgroup, header, footer, address, nav {
+	border: 1px solid rgba(255,0,0,0.15) !important;
+	background: rgba(255,0,0,0.05) !important;
+}
+*/
+
+
+/* ------------------------------------------------------------ */
+/* start project-specifc styles below this line */
+
+body {
+	font-family: 'Spectral', serif;
+	font-size: 16px;
+	line-height: 1.5em;
+	color: #011043;
+}
+
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 64px;
+	line-height: 1.5em;
+	color: #011043;
+	text-align: center;
+	grid-column: 2 / 5;
+}
+
+h3 {
+	font-family: 'Spectral', serif;
+	font-size: 24px;
+	line-height: 1.5em;
+	color: #7A0000;
+	grid-column: 2 / 5;
+}
+p {
+	line-height: 1.5em;
+	color: #011043;
+}
+
+/*	Generally, you will only want one container element in
+	the document, wrapping around the main content area.
+	If you have more than one container, you are probably doing
+	something wrong.
+*/
+.container {
+		padding: 2em;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+		/* grid-template-rows: 0.5fr 0.8fr 2fr 3fr 5fr 5fr; */
+
+}
+
+.homepage_cent {
+	grid-column: 2 / 5;
+	grid-row: 2 / 3;
+	max-width: 400px;
+	margin: auto;
+}
+
+.body_one {
+	grid-column: 2 / 5;
+	grid-row: 3 / 4;
+	border-top: 4px solid #011043;
+	margin-top: 4em;
+	margin-bottom: 8em;
+	border-bottom: 4px solid #011043;
+}
+
+.sg_model {
+	width: 200px;
+	float: left;
+	margin: 1em;
+}
+
+.brenner_plaque {
+	width: 200px;
+	float: right;
+	margin: 1em;
+}
+
+.body_two {
+	grid-column: 2 / 5;
+	grid-row: 4 / 5;
+	border-bottom: 4px solid #011043;
+	margin-bottom: 4em;
+}
+
+.body_three {
+	grid-column: 2 / 5;
+	grid-row: 5 / 6;
+	border-bottom: 4px solid #011043;
+	margin-bottom: 4em;
+}
+
+
+
+
+
+/* ------------------------------------------------------------ */
+/* media query containing styles for larger screens */
+@media (min-width: 720px) {
+
+	/* container on larger screens */
+	.container {
+		width: 100%;
+		margin: 0em;
+		margin-right: auto;
+		margin-left: auto;
+		border: 10px solid #DDC2AE;
+		color: #DDC2AE;
+		background-color: #7BA3C7;
+	}
+
+} /* end media query */
