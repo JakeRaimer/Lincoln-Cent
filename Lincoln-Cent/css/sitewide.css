@@ -1,0 +1,317 @@
+/* ------------------------------------------------------------ */
+/* imports and utilities */
+
+/* 3rd-party CSS files */
+@import 'vendor/h5bp-head.css';
+@import 'vendor/normalize.css';
+@import 'vendor/h5bp-tail.css';
+
+/* use a more intuitive box sizing model (http://is.gd/wNVjAo) */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* Scale down images and embedded videos so they don't overflow their parents */
+img, object { max-width: 100%; }
+
+/*	Development/layout aid. Remove the comments
+	on this rule in order to draw boxes around DIVs
+	and other elements used for layout. */
+/*
+div, main, article, section, aside, hgroup, header, footer, address, nav {
+	border: 1px solid rgba(255,0,0,0.15) !important;
+	background: rgba(255,0,0,0.05) !important;
+}
+*/
+
+
+/* ------------------------------------------------------------ */
+/* start project-specifc styles below this line */
+
+body {
+	font-family: 'Libre Franklin', sans-serif;
+	font-size: 16px;
+	line-height: 1.5em;
+	color: #011043;
+}
+
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 64px;
+	line-height: 1.5em;
+	color: #011043;
+	text-align: center;
+	grid-column: 2 / 5;
+	padding-top: 2em;
+}
+
+h2 {
+	font-family: 'Spectral', serif;
+	font-size: 20px;
+	color: #7A0000;
+}
+
+a {
+	color: #7A0000;
+	transition: all 500ms;
+}
+
+a:hover {
+	transition: all 500ms;
+	font-size: 32px;
+	padding: 1em;
+	align-items: center;
+	font-weight: bold;
+	color: #011043;
+}
+
+h3 {
+	font-family: 'Spectral', serif;
+	font-size: 30px;
+	line-height: 1.5em;
+	padding-top: 6em;
+	padding-bottom: 1em;
+	color: #7A0000;
+	grid-column: 2 / 5;
+	border-bottom: 4px solid #011043;
+}
+
+h4 {
+	font-family: 'Libre Franklin', serif;
+	font-size: 20px;
+	font-style: italic;
+	line-height: 1.5em;
+	text-align: center;
+	margin-top: 8em;
+	color: #011043;
+}
+
+p {
+	line-height: 2em;
+	color: #011043;
+}
+
+li {
+	font-family: 'Libre Franklin', sans-serif;
+	font-size: 16px;
+	line-height: 1.5em;
+	color: #011043;
+}
+
+/*	Generally, you will only want one container element in
+	the document, wrapping around the main content area.
+	If you have more than one container, you are probably doing
+	something wrong.
+*/
+.container {
+	padding: 6em;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	/* grid-template-rows: 0.5fr 0.8fr 2fr 3fr 5fr 5fr; */
+	width: 100%;
+	margin: 0em;
+	margin-right: auto;
+	margin-left: auto;
+	border: 10px solid #DDC2AE;
+	color: #DDC2AE;
+	background-color: #7BA3C7;
+}
+
+.homepage_cent {
+	grid-column: 2 / 5;
+	grid-row: 2 / 3;
+	max-width: 400px;
+	margin: auto;
+}
+
+.sg_model {
+	width: 200px;
+	float: left;
+	margin: 1em;
+	margin-bottom: 0;
+}
+
+.brenner_plaque {
+	width: 200px;
+	float: right;
+	margin: 1em;
+}
+
+.brady_photo {
+	width: 300px;
+	float: left;
+	margin-right: 1em;
+	margin-bottom: 0;
+}
+
+.penny_profile {
+	width: 300px;
+	float: right;
+	padding: 1em;
+}
+
+.nyc_line {
+	width: 300px
+	grid-row: 2 / 3;
+	padding: 1em;
+}
+
+.mint_medal {
+	width: 300px;
+	float: right;
+	shape-outside: circle(50%) border-box;
+	padding: 1em;
+	margin-left: 0;
+}
+
+.coin_1909_s_vdb {
+	width: 200px
+	grid-row: 2 / 3;
+	padding: 1em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.wheat {
+	width: auto;
+	padding: 1em;
+	margin-top: 1em;
+	margin-bottom: 2em;
+}
+
+.memorial {
+	margin-top: 1em;
+	margin-bottom: 2em;
+	width: auto;
+	align-items: center;
+}
+
+.coin_2009_reverse {
+	margin-top: 8em;
+	margin-bottom: 3em;
+	width: auto;
+}
+
+.shield_reverse {
+	margin-top: 2em;
+	margin-bottom: 2em;
+	width: 200;
+}
+
+.body_one {
+	grid-column: 2 / 5;
+	grid-row: 3 / 4;
+	border-top: 4px solid #011043;
+	margin-top: 4em;
+	margin-bottom: 8em;
+}
+
+.body_two {
+	grid-column: 2 / 5;
+	grid-row: 4 / 5;
+	margin-bottom: 8em;
+	align-items: center;
+}
+
+.body_three {
+	grid-column: 2 / 5;
+	grid-row: 5 / 6;
+	margin-bottom: 8em;
+	align-items: center;
+}
+
+.body_four {
+	grid-column: 2 / 5;
+	grid-row: 5 / 6;
+	margin-bottom: 8em;
+	align-items: center;
+}
+
+.body_five {
+	grid-column: 2 / 5;
+	grid-row: 5 / 6;
+	margin-bottom: 8em;
+	align-items: center;
+}
+
+.body_six {
+	grid-column: 2 / 5;
+	grid-row: 5 / 6;
+	margin-bottom: 8em;
+	align-items: center;
+}
+
+.outer {
+	padding-top: 1fr;
+	position: fixed;
+	background-color: #DDC2AE;
+	width: 100%;
+
+}
+
+.navbar {
+	display: grid;
+	align-items: center;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	margin-top: 2em;
+	margin-bottom: 3em;
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #DDC2AE;
+}
+
+
+.home {
+		grid-column: 2 / 3;
+		text-align: center;
+}
+
+.inception {
+		grid-column: 3 / 4;
+		text-align: center;
+}
+
+.design {
+		grid-column: 4 / 5;
+		text-align: center;
+}
+
+.release {
+		grid-column: 5 / 6;
+		text-align: center;
+}
+
+.production {
+		grid-column: 6 / 7;
+		text-align: center;
+}
+
+.gallery {
+		grid-column: 7 / 8;
+		text-align: center;
+}
+
+	/*position: fixed;
+	padding: 2em;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	width: 100%;
+	color: #DDC2AE;
+	align-items: center;
+	margin-bottom: 3em;
+	background-color: #DDC2AE;
+}
+
+
+
+
+
+/* ------------------------------------------------------------ */
+/* media query containing styles for larger screens */
+@media (min-width: 720px) {
+
+	/* container on larger screens */
+	.container {
+
+	}
+
+} /* end media query */
